@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-11",
+  "timezone": "Asia/Saigon",
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-nano",
+    "judge_provider": "openai",
+    "judge_model": "gpt-5.4-nano",
+    "max_steps": 8,
+    "dataset": "core"
+  },
+  "workers": 2,
+  "sha256": {
+    "agent.py": "5538fabe7e87bbc1f798e30699871b82549e7a5509e4c021ea19a2b6676cb4af",
+    "analysis/agent_before.py": "da1d846797494d7f3f184b94a56820349189ca6d23326d4248d047d1304a54b1",
+    "evals/cases.json": "bca3ea31cb42dae5a952a7522bf87242b25117e565d1a5c3c636c18635abf50b",
+    "evals/scenarios.py": "193c39f8f82cdaa3c4f7b68715ddaf94cdae1f4f760bcc893ccaa42e84436a1f",
+    "evals/grading.py": "e64f759f933830800788f6d315768a1152214faefb947585a1ff9148e7761f25",
+    "eval_before.json": "1f02736080317e669353740ac692e70715b3e9c6dff8c290982872eeb47cbc28",
+    "eval_after.json": "bac063385584152a36674a9c318b5606aeae7a5e90819ebcdefad14c6ec58bf7"
+  },
+  "baseline_retries": [
+    {
+      "id": "E1",
+      "attempt": 1,
+      "previous_reason": "Run lỗi; chưa phân biệt được lỗi agent và hạ tầng.",
+      "score": 83,
+      "status": "scored"
+    },
+    {
+      "id": "E5",
+      "attempt": 1,
+      "previous_reason": "Run lỗi; chưa phân biệt được lỗi agent và hạ tầng.",
+      "score": 88,
+      "status": "scored"
+    },
+    {
+      "id": "H1",
+      "attempt": 1,
+      "previous_reason": "Run lỗi; chưa phân biệt được lỗi agent và hạ tầng.",
+      "score": 60,
+      "status": "scored"
+    }
+  ],
+  "final_retries": [
+    {
+      "id": "E2",
+      "attempt": 1,
+      "previous_reason": "Judge lỗi: Điểm evidence không hợp lệ.",
+      "score": 87,
+      "status": "scored"
+    },
+    {
+      "id": "H2",
+      "attempt": 1,
+      "previous_reason": "Run lỗi; chưa phân biệt được lỗi agent và hạ tầng.",
+      "score": 89,
+      "status": "scored"
+    },
+    {
+      "id": "H7",
+      "attempt": 1,
+      "previous_reason": "Run lỗi; chưa phân biệt được lỗi agent và hạ tầng.",
+      "score": 83,
+      "status": "scored"
+    }
+  ]
+}

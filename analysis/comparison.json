@@ -1,0 +1,204 @@
+{
+  "config": {
+    "provider": "openai",
+    "model": "gpt-5.4-nano",
+    "judge_provider": "openai",
+    "judge_model": "gpt-5.4-nano",
+    "max_steps": 8,
+    "dataset": "core"
+  },
+  "before": {
+    "score": 84.55,
+    "agent_model_calls": 54,
+    "judge_model_calls": 22,
+    "agent": {
+      "input_tokens": 46475,
+      "output_tokens": 15401,
+      "cached_input_tokens": 1664,
+      "total_tokens": 61876,
+      "estimated_usd": 0.028247
+    },
+    "judge": {
+      "input_tokens": 48796,
+      "output_tokens": 5961,
+      "cached_input_tokens": 0,
+      "total_tokens": 54757,
+      "estimated_usd": 0.01721
+    },
+    "combined": {
+      "input_tokens": 95271,
+      "output_tokens": 21362,
+      "cached_input_tokens": 1664,
+      "total_tokens": 116633,
+      "estimated_usd": 0.045457
+    },
+    "tool_calls": 58,
+    "validation_missing_source": 0,
+    "validation_partial_evidence": 0
+  },
+  "after": {
+    "score": 85.86,
+    "agent_model_calls": 60,
+    "judge_model_calls": 22,
+    "agent": {
+      "input_tokens": 75511,
+      "output_tokens": 14603,
+      "cached_input_tokens": 9984,
+      "total_tokens": 90114,
+      "estimated_usd": 0.031559
+    },
+    "judge": {
+      "input_tokens": 48105,
+      "output_tokens": 6029,
+      "cached_input_tokens": 0,
+      "total_tokens": 54134,
+      "estimated_usd": 0.017157
+    },
+    "combined": {
+      "input_tokens": 123616,
+      "output_tokens": 20632,
+      "cached_input_tokens": 9984,
+      "total_tokens": 144248,
+      "estimated_usd": 0.048716
+    },
+    "tool_calls": 60,
+    "validation_missing_source": 0,
+    "validation_partial_evidence": 3
+  },
+  "cases": [
+    {
+      "id": "E1",
+      "before": 83,
+      "after": 84,
+      "delta": 1
+    },
+    {
+      "id": "E2",
+      "before": 91,
+      "after": 87,
+      "delta": -4
+    },
+    {
+      "id": "E3",
+      "before": 92,
+      "after": 86,
+      "delta": -6
+    },
+    {
+      "id": "E4",
+      "before": 95,
+      "after": 96,
+      "delta": 1
+    },
+    {
+      "id": "E5",
+      "before": 88,
+      "after": 76,
+      "delta": -12
+    },
+    {
+      "id": "E6",
+      "before": 93,
+      "after": 89,
+      "delta": -4
+    },
+    {
+      "id": "A1",
+      "before": 84,
+      "after": 79,
+      "delta": -5
+    },
+    {
+      "id": "A2",
+      "before": 79,
+      "after": 89,
+      "delta": 10
+    },
+    {
+      "id": "A3",
+      "before": 91,
+      "after": 88,
+      "delta": -3
+    },
+    {
+      "id": "A4",
+      "before": 91,
+      "after": 95,
+      "delta": 4
+    },
+    {
+      "id": "A5",
+      "before": 60,
+      "after": 67,
+      "delta": 7
+    },
+    {
+      "id": "A6",
+      "before": 91,
+      "after": 87,
+      "delta": -4
+    },
+    {
+      "id": "A7",
+      "before": 83,
+      "after": 87,
+      "delta": 4
+    },
+    {
+      "id": "A8",
+      "before": 92,
+      "after": 88,
+      "delta": -4
+    },
+    {
+      "id": "H1",
+      "before": 60,
+      "after": 84,
+      "delta": 24
+    },
+    {
+      "id": "H2",
+      "before": 83,
+      "after": 89,
+      "delta": 6
+    },
+    {
+      "id": "H3",
+      "before": 82,
+      "after": 97,
+      "delta": 15
+    },
+    {
+      "id": "H4",
+      "before": 97,
+      "after": 98,
+      "delta": 1
+    },
+    {
+      "id": "H5",
+      "before": 88,
+      "after": 87,
+      "delta": -1
+    },
+    {
+      "id": "H6",
+      "before": 87,
+      "after": 79,
+      "delta": -8
+    },
+    {
+      "id": "H7",
+      "before": 70,
+      "after": 83,
+      "delta": 13
+    },
+    {
+      "id": "H8",
+      "before": 80,
+      "after": 74,
+      "delta": -6
+    }
+  ],
+  "pricing_source": "https://developers.openai.com/api/docs/pricing",
+  "cost_scope": "Estimates for retained scored runs only, including judge. Excludes retries, smoke tests and intermediate versions."
+}
